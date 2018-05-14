@@ -39,7 +39,7 @@ header nav li{
     display: inline;
 }
 header nav li a{
-    /*display: block;*/
+    display: block;
     float: left;
     padding: .5em 3em;
     border-right: .1em solid;
@@ -71,14 +71,75 @@ article img{
     background-image: url(../images/drummer.jpg);
 }
 #home header{
-    background-image: url(../images/guitarist.jpg);
-}
+    background-image: url(../images/guitarist.jpg); /*待定错误，各图片加载不出来*/
+} 
 header{
-    background-image: url(../images/guitarist.jpg); 
+    /* background-image: url(../images/guitarist.jpg);   */
     background-repeat: no-repeat;
     background-position: bottom right;
     border-width: 0.1em;
     border-style: solid;
     border-bottom-width: 0;
     background-size: 450px 300px;
+}
+#slideshow{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+#preview{
+    position: absolute;
+    border-width: 0;
+    outline-width: 0;
+}
+
+#imagegallery li{
+    display: inline;
+}
+#palceholder{
+    height: 300px;
+    width: 400px;
+}
+td{
+    padding: .5em 3em;
+}
+th{
+    color: #edc;
+    background-color: #455;
+}
+tr td{
+    color: #223;
+    background-color: #eb6; 
+
+}
+
+.highlight td{
+    color: #223;
+    background-color: #cba; /*前面不加tr*/
+    font-weight: bold;
+}
+.odd td{
+    color: #223;
+    background-color:#ec8;  /*前面不加tr*/
+}
+
+dl{
+    overflow: hidden;
+}
+dt{
+    float: left;
+}
+dd{
+    float: left;
+}
+/* .aaa td{
+    color: #233;
+    background-color: red;
+} */
+label{
+    display: block;
+} 
+ fieldset{
+    border: 0;
 }
